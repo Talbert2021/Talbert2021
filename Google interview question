@@ -1,0 +1,25 @@
+//Given a word, find the length of the longest subset word without repeating characters.
+keyWord = "Supercalifragilisticexpialidocious"
+
+//pretend this array has every word in the dictionary
+dictionary = ["poop", "butt", "cat", "dog", "fart", "frog"]
+
+//GO!!!
+
+function to find if specific letter is in keyWord and returns it's index or -1 if it does not exist.
+  variable that stores that index
+  loop function that supplies each letter of a given word and checks,
+  if the returned index is -1 it breaks and returns false,
+  if index number returned is less than the previous index number it returns false,
+  else not it stores the new index number
+  if we reached the last letter of the given word and it passes, returns true
+    function that can check any word and return true if it is a subset of the keyWord
+    given true it will add the word to a new list.
+    once completed start a new code
+    
+      check for repeating characters in each word. if it has repeats. delete it. or only add words without repeats to a new list.
+    
+longestSubset = " "
+longestLength = 0
+check length of every word in list and compare it to the current longest length. if we found a longer one, replace longestLength and longestSubset
+print(longestSubset + "=" + longestLength)
